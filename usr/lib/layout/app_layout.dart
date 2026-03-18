@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import '../screens/dashboard_screen.dart';
+import '../screens/product_management_screen.dart';
+import '../screens/internal_operations_screen.dart';
 
 class AppLayout extends StatefulWidget {
   const AppLayout({super.key});
@@ -13,9 +15,9 @@ class _AppLayoutState extends State<AppLayout> {
 
   final List<Widget> _screens = [
     const DashboardScreen(),
-    const Center(child: Text('Quản lý Hàng hóa (Đang phát triển)')),
+    const ProductManagementScreen(),
     const Center(child: Text('Đơn hàng (Đang phát triển)')),
-    const Center(child: Text('Nghiệp vụ nội bộ (Đang phát triển)')),
+    const InternalOperationsScreen(),
     const Center(child: Text('Cài đặt')),
   ];
 

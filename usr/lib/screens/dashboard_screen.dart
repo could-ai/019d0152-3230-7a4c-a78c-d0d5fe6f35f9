@@ -36,10 +36,10 @@ class DashboardScreen extends StatelessWidget {
                   physics: const NeverScrollableScrollPhysics(),
                   childAspectRatio: 2.5,
                   children: const [
-                    StatCard(title: 'Doanh thu hôm nay', value: '24,500,000 đ', icon: Icons.attach_money, color: Colors.green),
-                    StatCard(title: 'Đơn hàng mới', value: '142', icon: Icons.shopping_bag, color: Colors.blue),
-                    StatCard(title: 'Khách hàng', value: '1,204', icon: Icons.people, color: Colors.orange),
-                    StatCard(title: 'Tồn kho thấp', value: '12', icon: Icons.warning_amber_rounded, color: Colors.red),
+                    StatCard(title: 'Tổng doanh thu (Tháng)', value: '1,245,000,000 đ', icon: Icons.account_balance_wallet, color: Colors.green),
+                    StatCard(title: 'Tổng đơn hàng (Tháng)', value: '3,452', icon: Icons.shopping_cart_checkout, color: Colors.blue),
+                    StatCard(title: 'Doanh thu hôm nay', value: '24,500,000 đ', icon: Icons.attach_money, color: Colors.orange),
+                    StatCard(title: 'Đơn hàng hôm nay', value: '142', icon: Icons.shopping_bag, color: Colors.purple),
                   ],
                 );
               },
@@ -99,7 +99,7 @@ class DashboardScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
-            'Biểu đồ doanh thu (7 ngày qua)',
+            'Doanh thu theo ngày (7 ngày qua)',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 24),
